@@ -1,0 +1,48 @@
+.dashboard-page {
+  background: url("../assets/pattern.png") no-repeat;
+  .header {
+    .user-name {
+      padding: 6px 20px;
+      display: inline-flex !important;
+      background: #f7f9fc;
+      border-radius: 8px;
+      .ant-badge {
+        line-height: 20px;
+        .ant-badge-status-dot {
+          margin-right: $spacing;
+          width: 12px;
+          height: 12px;
+        }
+      }
+      p {
+        line-height: 20px;
+      }
+    }
+  }
+  .body {
+    .ant-divider-horizontal {
+      // width: calc(100% - 40px);
+      background: #68B8F8;
+      opacity: .5;
+      margin: 0;
+      margin-top:4px;
+      // min-width: calc(100% - 40px);
+    }
+    .wallet {
+      background: linear-gradient(256.28deg, #1c94f4 0%, #1273ea 100%);
+      /* Shadow2 */
+
+      box-shadow: 0px 12px 20px -4px #c5cee0;
+      border-radius: 16px;
+      min-height: 152px;
+    }
+    .group-action {
+      .ant-btn[disabled] { opacity: .5;}
+      .ant-btn-lg {
+        width: 48px;
+        height: 48px;
+        padding-top: 7px;
+      }
+    }
+  }
+}
