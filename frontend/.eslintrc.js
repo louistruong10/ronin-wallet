@@ -1,0 +1,53 @@
+module.exports = {
+  root: true,
+  parser: "@typescript-eslint/parser",
+  plugins: ["react", "@typescript-eslint", "prettier"],
+  extends: [
+    "airbnb-typescript",
+    "airbnb/hooks",
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:@typescript-eslint/recommended",
+    "prettier",
+    "prettier/react",
+    "prettier/@typescript-eslint",
+    "plugin:prettier/recommended",
+  ],
+  env: {
+    browser: true,
+    jasmine: true,
+    jest: true,
+    node: true,
+    es2021: true,
+  },
+  // Airbnb's ESLint config requires this
+  parserOptions: {
+    project: "./tsconfig.json",
+    tsconfigRootDir: __dirname,
+    sourceType: "module",
+  },
+  rules: {
+    // Include .prettierrc.js rules
+    "prettier/prettier": ["error", {}, { usePrettierrc: true }],
+    // We will use TypeScript's types for component props instead
+    "react/prop-types": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/static-property-placement": "off",
+    "react/state-in-constructor": "off",
+    "refer-object-spread": "off",
+    "react/destructuring-assignment": "off",
+    "import/no-extraneous-dependencies": "off",
+    "import/prefer-default-export": "off",
+    "no-return-assign": "off",
+    "react/no-access-state-in-setstate": "off",
+    "react/button-has-type": "off",
+    "react/self-closing-comp": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "@typescript-eslint/lines-between-class-members": "off",
+    "react/sort-comp": "off",
+    "no-else-return": "off",
+    "consistent-return": "off",
+    "no-debugger": "off",
+  },
+  ignorePatterns: [".eslintrc.js", "craco.config.js"],
+}
