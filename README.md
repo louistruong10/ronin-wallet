@@ -23,6 +23,7 @@ $ yarn dev
 ```
 
 Once the server is running, you can visit `http://localhost:8000/`
+Please disable AdBlock if you use Chrome
 
 ## RUNNING FRONTEND
 Install dependencies:
@@ -40,3 +41,4 @@ $ yarn start
 ```
 
 Once the server is running, you can visit `http://localhost:3000/`
+
